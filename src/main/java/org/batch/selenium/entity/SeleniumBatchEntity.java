@@ -1,7 +1,5 @@
 package org.batch.selenium.entity;
 
-
-
 public class SeleniumBatchEntity {
 
 	private int id;
@@ -33,4 +31,9 @@ public class SeleniumBatchEntity {
 	public SeleniumBatchEntity() {
 		
 	}
+	
+	@Override
+    public String toString() {
+        return "EntityId" + id + ", EntityName" + name;
+    }
 }
